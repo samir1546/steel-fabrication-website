@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+
+html{
+  scroll-behavior:smooth;
+}
+
+
+@font-face{
+  font-family: 'myfont';
+    src: url('./assets/AkayaKanadaka-Regular.ttf')
+}
+
+@font-face{
+    font-family: 'myfont1';
+    src: url('./assets/NeueMachina-Regular.woff2')
+}
+
+.slider{
+  overflow:hidden;
+  width:100%;
+}
+
+.slide-track{
+  display:flex;
+  gap:50px;
+  animation: scroll 30s linear infinite;
+  padding: 30px 0;
+}
+
+.slider:hover .slide-track{
+  animation-play-state: paused;
+}
+
+.tool-card{
+  min-width:340px;
+  background:linear-gradient(145deg,#111,#1b1b1b);
+  border-radius:18px;
+  padding:25px;
+  text-align:center;
+  transition:0.4s;
+  backdrop-filter:blur(10px);
+  border-left: 2px solid rgba(255,120,0,0.35);
+  border-right: 2px solid rgba(255,120,0,0.35);
+}
+
+.tool-card:hover{
+  transform:translateY(-10px) scale(1.05);
+  box-shadow:0 20px 50px rgba(255,120,0,0.35);
+}
+
+
+.img-box{
+  height:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:15px;
+}
+
+.img-box img{
+  max-height:200px;
+  max-width:100%;
+  object-fit:contain;
+  transition:0.4s;
+  border-radius: 100%;
+  border: 2px solid rgba(255,255,255,0.1);
+}
+
+.tool-card:hover img{
+  transform:scale(1.1);
+}
+
+/* TEXT */
+
+.content h4{
+  font-size:20px;
+  margin-bottom:8px;
+  font-family: myfont1;
+}
+
+.content p{
+  font-size:14px;
+  color:#aaa;
+  line-height:1.5;
+  font-family: myfont1;
+
+}
+
+/* BLUR EFFECT */
+
+.slide-track:hover .tool-card{
+  filter:blur(4px);
+  opacity:0.5;
+}
+
+.slide-track .tool-card:hover{
+  filter:blur(0);
+  opacity:1;
+  
+}
+
+/* SLIDER ANIMATION */
+
+@keyframes scroll{
+  0%{
+    transform:translateX(0);
+  }
+  100%{
+    transform:translateX(-50%);
+  }
+}
