@@ -60,11 +60,11 @@ const Hero = () => {
 
                 {/* heading */}
 
-                <h1 className="text-white font-bold leading-tight flex flex-col md:flex-row items-center gap-4 text-4xl sm:text-5xl md:text-7xl">
+                <h1 className="text-white font-[myfont1] font-bold leading-none flex flex-col md:flex-row items-center gap-4 text-[2.8rem] sm:text-[4rem] md:text-[6rem] lg:text-[8rem]">
 
                     <span>EKTA</span>
 
-                    <span className="relative border border-orange-500 px-4 py-2 bg-[#E8602E21]">
+                    <span className="relative border border-orange-500 px-4 sm:px-6 py-2 bg-[#E8602E21]">
 
                         FABRICATION
 
@@ -79,13 +79,13 @@ const Hero = () => {
 
                 {/* sub heading */}
 
-                <h2 className="text-white text-lg sm:text-2xl md:text-3xl font-bold tracking-wide">
-                    M.S.S.S FABRICATION
+                <h2 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-wide">
+                    M . S . S . S . FABRICATION
                 </h2>
 
                 {/* description */}
 
-                <p className="text-gray-300 text-sm sm:text-base md:text-lg max-w-2xl">
+                <p className="text-gray-300 text-base sm:text-lg md:text-xl max-w-3xl font-semibold">
                     Spl In: Fancy Gate, Grill, Railing, Shutter, Window,
                     Channel Gate, Fiber Shed, Tin Shed Etc.
                 </p>
