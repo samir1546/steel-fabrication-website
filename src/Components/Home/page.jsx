@@ -18,18 +18,18 @@ const Hero = () => {
             ease: "power1.inOut"
         })
 
-        gsap.from(alltext.current.children, {
-            opacity: 0,
-            y: 40,
-            duration: 1,
-            stagger: 0.2
-        })
+        // gsap.from(alltext.current.children, {
+        //     opacity: 0,
+        //     y: 40,
+        //     duration: 1,
+        //     stagger: 0.2
+        // })
 
     }, [])
 
     return (
 
-        <section id="home" className="relative min-h-screen w-full overflow-hidden bg-black flex items-center justify-center">
+        <section id="home" className="relative min-h-screen w-full bg-black flex items-center justify-center">
 
             {/* glow circle */}
 
@@ -49,7 +49,7 @@ const Hero = () => {
 
             <div
                 ref={alltext}
-                className="relative z-10 flex flex-col items-center text-center px-6 max-w-5xl gap-6"
+                className="relative z-10 flex flex-col items-center text-center max-w-[90%] md:max-w-5xl gap-6"
             >
 
                 {/* tagline */}
